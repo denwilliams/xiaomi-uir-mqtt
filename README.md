@@ -23,3 +23,13 @@ cp config.example.yml config.yml
 ```
 CONFIG_PATH=./config.yml node index.js
 ```
+
+## Using
+
+(Assuming a MQTT prefix of `miir/`)
+
+Send `miir/learn` to initiate code learning.
+
+Learned codes will be sent to `miir/learned`.
+
+Broadcast IR codes from the device by sending to `miir/send`.
