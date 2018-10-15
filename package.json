@@ -1,0 +1,16 @@
+{
+  "name": "miir-mqtt",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "miio": "^0.15.6",
+    "mqtt-usvc": "^1.0.5",
+    "queue": "^4.5.0"
+  }
+}

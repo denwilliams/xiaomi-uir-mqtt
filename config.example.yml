@@ -1,0 +1,7 @@
+mqtt:
+  uri: mqtt://localhost
+  prefix: miir/
+service:
+  gateway:
+    host: "192.168.12.34"
+    token: "hex_token_from_miio"
