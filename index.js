@@ -55,9 +55,14 @@ async function addToQueue(fn) {
 }
 
 async function connectDevice() {
-  // console.log("Connect", host, token);
-  device = await miio.device({ address: host, token: token });
-  // console.log("Connected to", device.miioModel);
+  try {
+    // console.log("Connect", host, token);
+    device = await miio.device({ address: host, token: token });
+    // console.log("Connected to", device.miioModel);
+  } catch (err) {
+    console.error(err.stack);
+    process.exit(1);
+  }
 }
 
 async function send(code) {
